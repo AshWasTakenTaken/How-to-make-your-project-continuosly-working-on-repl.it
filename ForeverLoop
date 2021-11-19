@@ -1,0 +1,32 @@
+from flask import Flask
+from threading import Thread
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return '''Hey Ash! You've activated me now! Goto discord and see my actions! I have so much to do! If you find any bugs, fix my code on that part. Anyways, enjoy what I can do!
+    
+    
+    I can help you in many ways. I can be dead with one bad code, so do it correctly!'''
+
+def run():
+  app.run(host='0.0.0.0',port=8080)
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start().
+    
+    #use this in your main.py or your default one at the 1st line
+   
+ from keep_alive import keep_alive
+ 
+     # use this at the second-last line
+     
+ keep_alive()
+ 
+     # you will see a website link at the top of your repl. you can customize the text in the 8th line. copy the url in your clipboard.
+     
+     # use uptimerobot website. create an account an then create a monitor, in that click "HTTP(s)" button at the top. enter your link and create the monitor.
+     
+     #works best for discord bots
